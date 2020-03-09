@@ -1,0 +1,24 @@
+<%- include ('partials/header') %>
+
+<div id="main">
+    
+    <div id="site_content">
+      <div class="sidebar">
+        <% for (pic of gallery) { %>
+            <div class="items">
+                <a href="/gallery/ <%= pic.id %> ">
+                    <img src="/images/sm/ <%= pic.filename %>" alt= "<% pic.title %>">
+                </a>
+                <p> <%= pic.title %> </p>
+    
+            </div>    
+        <%} %>
+        
+      
+      </div>
+    
+  </div>
+</div>
+   
+
+<%- include ('partials/footer') %>
