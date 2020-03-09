@@ -80,12 +80,13 @@ ol li
 { margin: 0px 0px 11px 0px; 
   padding: 0px;}
 
-#main, #logo, #menubar, #site_content, #footer
+#main, #logo, #menubar, #footer
 { margin-left: auto; 
   margin-right: auto;}
 
 #main
-{ padding-bottom: 40px;}
+{ padding-bottom: 40px;
+}
 
 #header
 { background: transparent url(../image/logo.jpg) no-repeat;}
@@ -165,11 +166,11 @@ ul#menu li a:hover
 
 #site_content
 { width: 90%;
-  overflow: hidden;
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: 10px 20px 20px 20px;
   background: #F6F6F0;
-  border: 15px solid #FFF;} 
+  border: 2vw solid #FFF;
+} 
 
 .sidebar
 { float: right;
@@ -317,10 +318,26 @@ table tr td
         width: 20%; }
 }
 
-
 .items {
-    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    margin: 0 auto;
+}
+
+.item figure {
     margin: auto 0;
-    display: inline-block;
+}
+
+.item figure img {
     width: 100%;
 }
+
+.item figcaption {
+    font-size: 2.5vw;
+}
+
