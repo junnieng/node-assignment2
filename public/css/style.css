@@ -317,8 +317,10 @@ table tr td
         width: 20%; }
 }
 
+
 .items {
-    height: 30vh;
-    width: 100vw;
-    margin: 2rem auto;
+    height: auto;
+    margin: auto 0;
+    display: inline-block;
+    width: 100%;
 }

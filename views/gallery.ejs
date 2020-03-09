@@ -1,24 +1,21 @@
-<%- include ('partials/header') %>
+<%- include('partials/header') %>
 
-<div id="main">
-    
-    <div id="site_content">
-      <div class="sidebar">
-        <% for (pic of gallery) { %>
-            <div class="items">
-                <a href="/gallery/ <%= pic.id %> ">
-                    <img src="/images/sm/ <%= pic.filename %>" alt= "<% pic.title %>">
+    <div id="main"> 
+        <div id="site_content">
+          <div class="items">
+            <% for(pic of gallery) { %>
+            <figure>
+                <a href="/gallery/<%= pic.id %>">
+                <img src="/images/sm/<%= pic.fileName %>" alt="<% pic.title %>">
                 </a>
-                <p> <%= pic.title %> </p>
+                <h3> <%= pic.title %> </h3>
+                <figcaption> <%= pic.attribution.credit %> </figcaption>
     
-            </div>    
-        <%} %>
-        
-      
-      </div>
-    
-  </div>
-</div>
+            </figure>    
+          <% } %>
+          </div> 
+        </div>
+    </div>  
    
 
-<%- include ('partials/footer') %>
+<%- include('partials/footer') %>
